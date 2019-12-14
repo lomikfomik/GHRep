@@ -1,6 +1,7 @@
 package lomikfomik.helloworld.client;
 
 import lomikfomik.helloworld.HelloWorld;
+import lomikfomik.helloworld.init.ModBlocks;
 import lomikfomik.helloworld.init.ModItems;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -15,7 +16,8 @@ public class ModelRegistrationHandler {
 	
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) {
-		registerModel(ModItems.FIRST_ITEM, 0);
+		registerModel(ModItems.HOLY_INGOT, 0);
+		registerModel(Item.getItemFromBlock(ModBlocks.HOLY_BLOCK),0);
 	}
 	private static void registerModel(Item item, int meta) {
 		ModelLoader.setCustomModelResourceLocation(item, meta, 

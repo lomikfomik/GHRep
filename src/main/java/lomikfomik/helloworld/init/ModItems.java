@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry.ObjectHolder;
 @ObjectHolder(HelloWorld.MODID)
 public class ModItems {
 
-	public static final Item FIRST_ITEM = null;
+	public static final Item HOLY_INGOT = null;
 
 	@EventBusSubscriber(modid = HelloWorld.MODID)
 	public static class RegistryHandler {
